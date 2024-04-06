@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/black_line2"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <Button
+        android:id="@+id/dialog_book_time_x"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/black_line2"
+        android:onClick="clickDialogBtn"
+        android:text="제한없음"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/dialog_book_time_ten_min"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+       android:background="@drawable/black_line2"
+        android:onClick="clickDialogBtn"
+        android:text="10 분"
+        android:textColor="#828282"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/dialog_book_time_two_min"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+       android:background="@drawable/black_line2"
+        android:onClick="clickDialogBtn"
+        android:text="20 분"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/dialog_book_time_three_min"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+       android:background="@drawable/black_line2"
+        android:onClick="clickDialogBtn"
+        android:text="30 분"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/dialog_book_time_one_hour"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+       android:background="@drawable/black_line2"
+        android:onClick="clickDialogBtn"
+        android:text="1 시간"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/dialog_book_time_two_hour"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+       android:background="@drawable/black_line2"
+        android:onClick="clickDialogBtn"
+        android:text="2 시간"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/dialog_book_time_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+       android:background="@drawable/black_line2"
+        android:onClick="clickDialogBtn"
+        android:text="취 소"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

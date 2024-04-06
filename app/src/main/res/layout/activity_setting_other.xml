@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/setting_other_profile_image_imageview"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/black_line"
+                        android:src="@drawable/ic_baseline_person_outline_24"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/setting_other_profile_image_x_imageview"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/black_line"
+                        android:src="@drawable/ic_baseline_person_outline_24"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/setting_other_nick_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="블로그 설명"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+
+                        <TextView
+                            android:id="@+id/setting_other_following_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="팔로워"
+                            android:textColor="#969696"
+                            android:textSize="15dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/setting_other_nick_textview"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/setting_other_follower_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="팔로잉"
+                            android:textColor="#969696"
+                            android:textSize="15dp"
+                            app:layout_constraintStart_toEndOf="@+id/setting_other_following_textview"
+                            app:layout_constraintTop_toBottomOf="@+id/setting_other_nick_textview"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/setting_other_follow_button"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="#3CC2FF"
+                            android:text="팔 로 우"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/setting_other_follow_X_button"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="팔로잉 취소"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+
+                <Button
+                    android:id="@+id/setting_other_my_memo_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="메 모"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/setting_other_my_book_time_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="독서 시간 기록"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:id="@+id/setting_other_want_book_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="읽고싶은"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/setting_other_want_book_line_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="━━━━━━━━━━━━━━━━━━━━━━"
+                    android:textColor="#6e6e6e"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_other_want_book_textview"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/setting_other_read_book_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="읽는중"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/setting_other_finish_book_textview"
+                    app:layout_constraintStart_toEndOf="@+id/setting_other_want_book_textview"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/setting_other_read_book_line_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="━━━━━━━━━━━━━━━━━━━━━━"
+                    android:textColor="#6e6e6e"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintEnd_toStartOf="@+id/setting_other_finish_book_line_textview"
+                    app:layout_constraintStart_toEndOf="@+id/setting_other_want_book_line_textview"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_other_read_book_textview"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/setting_other_finish_book_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:text="다 읽은"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/setting_other_finish_book_line_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="━━━━━━━━━━━━━━━━━━━━━━"
+                    android:textColor="#6e6e6e"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_other_finish_book_textview"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/setting_other_want_book_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/setting_other_read_book_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/setting_other_finish_book_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/setting_other_want_book_not_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:text="읽고 싶은 책이 없습니다"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/setting_other_read_book_menu_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:text="최근 독서순"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_other_read_book_textview" />
+
+
+                <Button
+                    android:id="@+id/setting_other_finish_book_menu_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:text="최신순"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_other_finish_book_textview" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

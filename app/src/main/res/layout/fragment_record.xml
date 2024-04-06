@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/record_year_month_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="몇년 몇월"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/black_line2"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/record_this_month_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="이번달 은"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="DuplicateIds" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/record_book_count_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="몇권"
+                        android:textColor="#FF0000"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds,MissingConstraints"
+                        tools:layout_editor_absoluteY="-1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="읽으셨습니다"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toEndOf="@+id/record_book_count_textview"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/record_book_recyclerview"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/black_line2"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/record_graph_this_month_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="이번달 은"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="DuplicateIds" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/record_graph_book_count_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="몇"
+                        android:textColor="#FF0000"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds,MissingConstraints"
+                        tools:layout_editor_absoluteY="-1dp" />
+
+                    <TextView
+                        android:id="@+id/record_graph_book_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="독서했습니다"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toEndOf="@+id/record_graph_book_count_textview"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:layout_height="300dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/chart"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.techtown.reiview_app">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleInstance"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Reiview_app"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup">
+        <activity android:name=".search.search_follwer"></activity>
+        <activity android:name=".search.search_follwing" />
+        <activity android:name=".search.setting_other" />
+        <activity android:name=".home.book_diary_update" />
+        <activity android:name=".home.book_diary_plus" />
+        <activity android:name=".home.book_diary_select" />
+        <activity android:name=".home.book_diary" />
+        <activity android:name=".home.book_read_start_noti" />
+        <activity android:name=".setting.setting_noti" />
+        <activity android:name=".setting.setting_book_read_time" />
+        <activity android:name=".setting.setting_read_time" />
+        <activity android:name=".setting.setting_my_book_memo" />
+        <activity android:name=".setting.setting_my_memo" />
+        <activity android:name=".setting.setting_update_finish" />
+        <activity android:name=".setting.setting_finish_select" />
+        <activity android:name=".home.finish_book" />
+
+        <service
+            android:name=".home.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".home.book_read_finish" />
+        <activity android:name=".home.book_page_check" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".home.memo_update" />
+        <activity android:name=".home.book_read_start" />
+        <activity android:name=".home.memo_plus" />
+        <activity android:name=".home.home_select" />
+        <activity android:name=".search.search_select" />
+        <activity android:name=".search.search_result" />
+        <activity
+            android:name=".setting.setting_update"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".checking.checking"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".search.search"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".home.home"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".setting.setting_select" />
+        <activity
+            android:name=".setting.setting"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".remake_password" />
+        <activity
+            android:name=".GMailSender"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".SendMail" />
+        <activity android:name=".email_certification_find_password" />
+        <activity android:name=".user_make" />
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

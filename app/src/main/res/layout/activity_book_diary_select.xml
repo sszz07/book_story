@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/book_diary_select_update_delete_imagebutton"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="370dp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:tint="@color/black" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/book_diary_select_time_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"
+                android:text="시간"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/product_my_select_category"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="읽은 페이지"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_my_select_category"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/book_diary_select_start_page_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/product_my_select_like_count_slide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="~"
+                    android:textColor="#505050"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_my_select_subject"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/book_diary_select_end_page_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/product_my_select_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="기억에 남는 문장"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/product_my_select_subject"
+                tools:ignore="MissingConstraints" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/book_diary_select_memory_textview"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_line2"
+                    android:layout_gravity="center"
+                    android:textColor="#24ffffff"
+                    android:lineSpacingExtra="2sp" />
+
+                <TextView
+                    android:id="@+id/book_diary_select_memory_text_textview"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2sp"
+                    android:textSize="15dp"
+                    android:textColor="#505050"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="읽고난 후 드는 생각 및 느낀점"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/product_my_select_subject"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/book_diary_select_think_textview"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_line2"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="8sp"
+                    android:textColor="#24ffffff"/>
+
+                <TextView
+                    android:id="@+id/book_diary_select_think_text_textview"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:textColor="#505050"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                  />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

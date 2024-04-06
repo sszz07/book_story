@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.setting_my_memo">
+
+    <TextView
+        android:id="@+id/setting_book_read_time_subject_textview"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="책 제목"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/setting_book_read_time_textview"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="책 제목"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/setting_book_read_time_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/setting_book_read_time_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <ProgressBar
+                android:id="@+id/setting_book_read_time_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/home_select_book_record_recyclerview" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

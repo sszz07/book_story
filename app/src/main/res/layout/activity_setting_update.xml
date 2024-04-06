@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="231dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="프로필 수정"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/setting_update_profile_image_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:background="@drawable/black_line"
+        android:src="@drawable/ic_baseline_person_outline_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/setting_update_profile_image_cancel_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:background="@drawable/black_line"
+        android:src="@drawable/ic_baseline_person_outline_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/setting_update_gallery_imagebutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/camera_gray_circle"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/setting_update_profile_image_imageview"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/setting_update_nick_edittext"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_update_profile_image_imageview" />
+
+
+    <TextView
+        android:id="@+id/setting_update_nick_all_count_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="  /10"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/setting_update_nick_edittext"
+        app:layout_constraintTop_toTopOf="@+id/setting_update_nick_edittext"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/setting_update_nick_count_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/setting_update_nick_all_count_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/setting_update_nick_edittext"
+        app:layout_constraintTop_toTopOf="@+id/setting_update_nick_edittext"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/setting_update_nick_cancel_imageview"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_baseline_cancel_24"
+        android:tint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/setting_update_nick_edittext"
+        app:layout_constraintTop_toTopOf="@+id/setting_update_nick_edittext"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/setting_update_x_button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="저 장"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_update_nick_edittext" />
+
+    <Button
+        android:id="@+id/setting_update_button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="저 장"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_update_nick_edittext" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

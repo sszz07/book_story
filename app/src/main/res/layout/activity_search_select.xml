@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/search_select_book_imageview"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#b4b4b4"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="360dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:id="@+id/search_select_book_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="책제목"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/search_select_book_make_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/search_select_book_make_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="출판사"
+                    android:textColor="#828282"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/search_select_want_read_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="100dp"
+                    android:src="@drawable/ic_baseline_bookmark_border_24"
+                    android:tint="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/search_select_want_read_cancel_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="100dp"
+                    android:src="@drawable/ic_baseline_bookmark_border_24"
+                    android:tint="#FF5050"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/search_select_want_read_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:text="읽고 싶어요"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/search_select_want_read_imageview"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/search_select_now_read_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:src="@drawable/ic_baseline_post_add_24"
+                    android:tint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/search_select_now_read_cancel_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:src="@drawable/ic_baseline_post_add_24"
+                    android:tint="#FF5050"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/search_select_now_read_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="97dp"
+                    android:text="읽을래요"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/search_select_now_read_imageview"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="작가"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#828282" />
+
+
+
+                <TextView
+                    android:id="@+id/search_select_writer_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="블로그 설명"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/setting_blog_text_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="출간일"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#828282" />
+
+                <TextView
+                    android:id="@+id/search_select_make_date_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="출간일"
+                    android:layout_marginLeft="17dp"
+                    android:textColor="@color/black"
+                    tools:ignore="DuplicateIds" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="페이지수"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#828282" />
+
+                <TextView
+                    android:id="@+id/search_select_page_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="출간일"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="쪽"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/black"
+                    tools:ignore="DuplicateIds" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="책 소개"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/search_select_book_content_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:text="책 내용"
+                    android:textColor="#828282" />
+
+
+                <Button
+                    android:id="@+id/search_select_book_naver_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="370dp"
+                    android:background="@drawable/naver_button"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:text="                                       구매하기"
+                    android:drawableLeft="@drawable/drawable_resize"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

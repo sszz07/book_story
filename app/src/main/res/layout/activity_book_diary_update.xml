@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:text="수정하기"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="읽은 페이지"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_my_update_category"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/book_diary_update_read_start_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="p"
+                    android:textColor="#505050"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_my_update_content"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/product_my_update_like_count_slide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="~"
+                    android:textColor="#505050"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_my_update_subject"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/book_diary_update_read_end_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/product_my_update_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="p"
+                    android:textColor="#505050"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_my_update_content"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/product_my_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="기억에 남는 문장"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/product_my_update_subject"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/book_diary_update_memory_edittext"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="@drawable/black_line2"
+                android:textColor="@color/black"
+                android:hint=" 기억에 남는 문장을 적어주세요"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="읽고난 후 드는 생각 및 느낀점"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/product_my_update_subject"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/book_diary_update_think_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="@drawable/black_line2"
+                android:hint=" 생각 및 느낀점을 적어주세요"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/book_diary_update_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="수정하기"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
